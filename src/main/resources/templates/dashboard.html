@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+  <head>
+   
+  
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+      <style >
+       .container{
+         
+         display:flex;
+         justify-content: center;
+         margin-top:10%;  
+       }
+       
+      </style>
+      
+  </head>
+  <body>
+       <!--   <div class="container" >
+           <h1>DashBoard</h1>  
+           <br>
+           <p ></p>
+           <br>
+           <a href="quote" class="btn btn-secondary">Get New Quote</a>
+           <br>
+           <a href="logout"  class="btn btn-primary">Logout</a>
+              
+         </div> --> 
+         
+         <div class="card text-center" style="margin-top:70px; width: 70%; margin-left: 80px;">
+  <div class="card-header">
+    <ul class="nav nav-pills card-header-pills">
+      <li class="nav-item">
+        <a class="nav-link active" href="logout">Logout</a>
+      </li>
+      
+    </ul>
+  </div>
+  <div class="card-body">
+    <p class="card-text" th:text="${quote.quote}"></p>
+    <a href="quote" class="btn btn-primary">Get Quote</a>
+  </div>
+</div>
+         
+         
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
+  </body>
+</html>
